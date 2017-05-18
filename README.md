@@ -55,12 +55,10 @@ After the installation, your Pi will synchronize with the blockchain. This will 
 - Backup your wallet with:
 > solarcoind backupwallet /destination/directory/of/your/choice/wallet.dat
 
-You can start using your wallet once your Pi is in sync with the blockchain.
-
-For more information on how to use your wallet please refer to this guide:
+You can start using your wallet once your Pi is in sync with the blockchain. For more information on how to use your wallet please refer to this guide:
 * https://github.com/Scalextrix/SolarCoin-Raspberry-Pi-Node/blob/master/Useful-SolarCoin-Daemon-Commands.md
 
-## !!! ENCRYPT YOUR WALLET BEFORE YOU DEPOSIT ANY SLR ON IT !!!
+## !!! ALWAYS ENCRYPT YOUR WALLET BEFORE YOU DEPOSIT ANY SLR ON IT !!!
 
 <hr>
 
@@ -70,7 +68,7 @@ SolarPi Copyright (C) 2017 Dominik Schäfer
 * domme@solarcoin.mehrunfug.org
 * Feel free to send any tips to my SLR address: 8Wrc5DaCFFzPBLsBZsnRtaXnrUygGjm6gJ
 
-Based on the guide by Scalextrix
+Based on the instructions for manual installation by Scalextrix:
 * https://github.com/Scalextrix/SolarCoin-Raspberry-Pi-Node
 
 ## GPLv3 License
