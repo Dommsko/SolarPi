@@ -58,7 +58,7 @@ After the installation, your Pi will synchronize with the blockchain. This will 
 You can start using your wallet once your Pi is in sync with the blockchain. For more information on how to use your wallet please refer to this guide:
 * https://github.com/Scalextrix/SolarCoin-Raspberry-Pi-Node/blob/master/Useful-SolarCoin-Daemon-Commands.md
 
-## !!! ALWAYS ENCRYPT YOUR WALLET BEFORE YOU DEPOSIT ANY SLR ON IT !!!
+## !!! ENCRYPT YOUR WALLET BEFORE YOU DEPOSIT SLR ON IT !!!
 
 <hr>
 
@@ -77,5 +77,5 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with this program. 
+You should have received a copy of the GNU General Public License along with this program.
 If not, see http://www.gnu.org/licenses/gpl-3.0.html
