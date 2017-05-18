@@ -76,7 +76,7 @@ SolarPi Copyright (C) 2017 Dominik Schäfer
 Based on the instructions for manual installation by Scalextrix:
 * https://github.com/Scalextrix/SolarCoin-Raspberry-Pi-Node
 
-## GPLv3 License
+#### License
 ![GPLv3](http://www.gnu.org/graphics/gplv3-127x51.png)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.
