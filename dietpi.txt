@@ -1,0 +1,249 @@
+#------------------------------------------------------------------------------------------------------
+# SolarPi - Configuration file
+#------------------------------------------------------------------------------------------------------
+# by Domme
+
+# An active internet connection is required for the installation.
+# You may use Ethernet or WiFi.
+# If Wifi is enabled, Ethernet will be disabled automatically.
+# (0=disabled, 1=enabled)
+
+Wifi_Enabled=1
+Wifi_SSID=WiFi Name
+Wifi_KEY=WiFi Password
+
+# Enter your Static Network details below, if applicable.
+# Use this, if you don't know how to get the Pi's IP address afterwards.
+Use_Static=0
+Static_IP=192.168.0.100
+Static_Mask=255.255.255.0
+Static_Gateway=192.168.0.1
+Static_DNS=8.8.8.8
+
+# RPi Hdmi output (not necessary for the installation process; disabled by standard to save RAM)
+rpi_hdmi_output=0
+
+#------------------------------------------------------------------------------------------------------
+# END OF SOLARPI-CONFIGURATION - NO CHANGES NECESSARY BELOW THIS LINE!
+#------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+#Modifcations to /boot/* files, will not be saved when powered on.
+#Please ensure you edit from the DietPi-RamDisk location /DietPi/*
+
+#------------------------------------------------------------------------------------------------------
+# D I E T - P I
+# 1st run settings
+# All settings below will be applied on the 1st boot of DietPi, ONCE.
+#------------------------------------------------------------------------------------------------------
+# >> Networking Options -----------------------------
+#If both Ethernet and Wifi are enabled, Wifi will take priority and Ethernet will be disabled.
+#   1=enabled
+Ethernet_Enabled=1
+#Wifi_Enabled=1
+
+#Enter your Wifi details below, if applicable (Case Sensitive).
+#Wifi_SSID=
+#Wifi_KEY=
+
+#Enter your Static Network details below, if applicable.
+#Use_Static=0
+#Static_IP=192.168.0.100
+#Static_Mask=255.255.255.0
+#Static_Gateway=192.168.0.1
+#Static_DNS=8.8.8.8
+
+#Hostname
+Hostname=SolarPi
+
+#Force ethernet speeds
+#NB: This is mainly aimed towards Pine A64's which may have a HW issue that causes unstable 1Gbit link.
+#	0=automatic speed | 10 = 10mbit, 100 = 100mbit etc
+Ethernet_Force_Speed=0
+
+# >> Misc Options -----------------------------------
+#Size of dphys-swapfile to generate (MB)
+#   0=Disabled | 1=auto (1GB-RAM = size) | 2+=manual
+Swapfile_Size=1
+
+# >> Automation Options -----------------------------
+#NB: Following options are only executed on 1st run of DietPi.
+
+#Fully automate installation
+#   1=Automated installation with no user inputs.
+AUTO_Install_Enable=1
+
+#Global Password to be applied for the system
+#  Affects root login password, and, all software installed by dietpi-software, that requires a password
+#  eg: MySQL, Transmission, Deluge etc.
+#  WARN: Passwords with the any of the following characters are not supported: \"$
+#  WARN: Do NOT change this entry, after 1st run setup of DietPi has been completed. It is always scraped by dietpi-software.
+AUTO_Global_Password=solarpi
+
+#DietPi-Software to automatically install. | requires AUTO_Install_Enable=1
+#	For a list of software index's (ID's), run '/DietPi/dietpi/dietpi-software list'
+#	No limit on number entires, add as many as you need and uncomment the line.
+#	DietPi will automatically install all pre-reqs (eg: ALSA/XSERVER for desktops etc)
+#	- Examples:
+#AUTO_DietpiSoftware_Install_ID=23 	#will install Desktop LXDE
+#AUTO_DietpiSoftware_Install_ID=74 	#will install LAMP webserver stack
+#AUTO_DietpiSoftware_Install_ID=44	#will install Bittorrent transmission
+
+#DietPi-Software Choice System
+#SSH Server Selection:
+#	0=none
+#	-1=dropbear
+#	-2=opensshserver
+AUTO_DietpiSoftware_SSHServerIndex=-1
+
+#File Server Selection:
+#	0=none/manual
+#	-1=proftp
+#	-2=samba
+AUTO_DietpiSoftware_FileServerIndex=0
+
+#Logging Mode Selection:
+#	0=none/manual
+#	-1=ramlog 1h clear
+#	-2=ramlog 1h save clear
+#	-3=logrotate + rsyslog
+AUTO_DietpiSoftware_LoggingIndex=0
+
+#Webserver Preference Selection:
+# NB: This will get ignored, if you have manually selected any WEBSERVER_Stacks.
+#	0=Apache2
+#	-1=Nginx
+#	-2=Lighttpd
+AUTO_DietpiSoftware_WebserverIndex=0
+
+#DietPi-Autostart | Requires AUTO_Install_Enable=1
+#   After installation is completed, which program should the system boot to?
+#   0=Console 7=Console+auto root login | 1=Kodi 2=Desktops (LXDE/MATE etc) 5=DietPi-Cloudshell 6=Uae4ARM (Fastboot) 8=Uae4ARM (standard boot) 9=dxx-rebirth
+AUTO_AutoStartTarget=0
+
+#Language/Regional settings | Requires AUTO_Install_Enable=1
+#   Timezone eg: Europe/London America/New_York | Full list (TZ*): https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+AUTO_Timezone=Europe/London
+#   Locale eg: en_GB OR en_US etc. One entry ONLY. DietPi automatically applies .UTF-8 to your locale | Full list: cat /etc/locale.gen
+AUTO_Locale=en_GB
+#   Keyboard Layout eg: gb us de fr
+AUTO_KeyboardLayout=gb
+
+#Custom Script | Requires AUTO_Install_Enable=1
+#   Allows you to automatically execute a custom script at the end of DietPi installation.
+#   Option 1 = Copy your script to /boot/Automation_Custom_Script.sh and it will be executed automatically.
+#   Option 2 = Host your script online, then use AUTO_CustomScriptURL=http://myweb.com/myscript.sh , it will be downloaded and executed automatically. | 0=disabled
+AUTO_CustomScriptURL=0
+
+#------------------------------------------------------------------------------------------------------
+# D I E T - P I
+# DietPi-Config settings.
+#------------------------------------------------------------------------------------------------------
+#RPi Hdmi output (if 0, sets tvservice -o and framebuffer 16x 16y 8z on boot, headless)
+#rpi_hdmi_output=0
+
+#Cpu Governor | ondemand | powersave | performance | conservative
+cpu_governor=ondemand
+cpu_usage_throttle_up=50
+
+#Limit the max cpu frequency (Mhz) for all cores. | 0=disabled | Useful for lowering temp/power usage on your device.
+cpu_max_frequency=0
+
+#Min value 10000 microseconds (10ms)
+cpu_ondemand_sampling_rate=25000
+
+#sampling rate * down factor / 1000 = Miliseconds (40 = 1000ms when sampling rate is 25000)
+cpu_ondemand_sampling_down_factor=80
+
+#Samba Client Details (Used by DietPi-Config | Networking NAS | Samba Client)
+SambaClient_ComputerName=computername
+SambaClient_ShareName=sharename
+SambaClient_Username=username
+SambaClient_Password=password
+
+#FTP Client Filesystem Mount (CurlFtpFs) (Used by DietPi-Config | Networking NAS | FTP Client)
+curlftpfs_clientaddress=192.168.0.100
+curlftpfs_clientusername=username
+curlftpfs_clientpassword=password
+
+#NFS Client Filesystem Mount (Used by DietPi-Config | Networking NAS | NFS Client)
+nfsclient_ipaddress=
+
+#Proxy settings | System-wide proxy settings. Use dietpi-config > networking options to apply.
+proxy_enabled=0
+proxy_address=MyProxyServer.com
+proxy_port=8080
+proxy_username=
+proxy_password=
+
+#Delay boot until network is established: 0=disabled | 1=10 second wait max (default) | 2=infinite wait
+boot_wait_for_network=1
+
+#DietPi check for updates (allows dietpi to check for updates on a daily basis and boot using a <1kb file download.)
+dietpi_check_for_updates=1
+
+#NTPD Update Mode: 0=disabled | 1=boot only | 2=boot + daily | 3=boot + hourly | 4=Daemon + Drift
+ntpd_update_mode=2
+
+#Wifi Hotspot
+wifi_hotspot_ssid=DietPi-HotSpot
+# - minimum of 8 characters
+wifi_hotspot_key=dietpihotspot
+wifi_hotspot_channel=3
+
+#WiFi country code. 2 character value (eg GB US DE JP): https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+wifi_country_code=GB
+
+#Serial Console: Set to 1 if you require a serial console during 1st run of DietPi.
+serial_console_enabled=0
+
+#Soundcard
+soundcard=none
+
+#LCD Panel addon
+lcdpanel=none
+
+#Prefer IPversion (for: apt-get) | auto (let system decide) / ipv4 (force) / ipv6 (force) | eg: force IPv4 with prefer_ipversion=ipv4
+prefer_ipversion=auto
+
+#Apt mirrors which are applied to /etc/apt/sources.list | Values here will also be applied during 1st run setup
+#	Raspbian = https://www.raspbian.org/RaspbianMirrors
+#	Debian = https://www.debian.org/mirror/official#list
+Apt_Raspbian_Mirror=http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian
+Apt_Debian_Mirror=http://ftp.debian.org/debian/
+
+#------------------------------------------------------------------------------------------------------
+# D I E T - P I
+# DietPi-Software settings.
+#------------------------------------------------------------------------------------------------------
+#Enter your EmonCMS.org write API key here. It will be applied automatically during EmonPi/Hub installation.
+# - eg: dietpi_emonhub_apikey=b4dfmk2o203mmxx93a
+dietpi_emonhub_apikey=
+
+#VNC Server Options
+dietpi_vncserver_width=1280
+dietpi_vncserver_height=720
+dietpi_vncserver_depth=16
+dietpi_vncserver_display=1
+dietpi_vncserver_shared_desktop=0
+
+#Optional username for nextcloud admin account, default is admin. Applied during installation.
+dietpi_nextcloud_username=admin
+
+#------------------------------------------------------------------------------------------------------
+# D I E T - P I
+# Dev settings
+#------------------------------------------------------------------------------------------------------
+gitbranch=master
+gitforkowner=Fourdee
+
+# - Max size of rootfs resize (%)
+rootfs_resize_limit=100
