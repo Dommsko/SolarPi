@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------------------------------
 # SolarPi - Configuration file
 #------------------------------------------------------------------------------------------------------
-# by Domme
+# (C) 2017 Dominik Schäfer - domme@solarcoin.mehrunfug.org
 
 # An active internet connection is required for the installation.
 # You may use Ethernet or WiFi.
