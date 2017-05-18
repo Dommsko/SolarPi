@@ -12,24 +12,26 @@
 
 <hr>
 
-## Introduction
+#### Introduction
 
 This guide explains how to easily set up a node yourself using a Raspberry Pi 3. You won't have to know about Linux, you won't need an external keyboard or monitor to log on to the Raspberry Pi. After you prepared your SD card with the OS image and configuration files you just insert it into your Pi and that initiates the automated installation.
 After the installation process, You will need to log on to the Pi via SSH to encrypt and use your wallet.
 
-## Hardware Requirements
+#### Hardware Requirements
 
 - Raspberry Pi 3B, older version don't have enough RAM to hold the blockchain index
 - Active internet connection
 - Device to write on a microSD card
 
-## Software Requirements
+#### Software Requirements
 
 - DietPi - A lightweight OS for your Raspberry - http://www.dietpi.com/download
 - Software to upload an .img file onto your microSD card. For more information on this topic please refer to https://www.raspberrypi.org/documentation/installation/installing-images/
 - A standard text editor
 
-## Installation
+<hr>
+
+#### Installation
 
 - If you want your Pi to use WiFi, open dietpi.txt and enable Wifi by setting Wifi_Enabled to 1 and edit the lines Wifi_SSID and Wifi_KEY according to your local network.
 - If you don't know how to figure out your Pi's IP address afterwards you should set a static IP address.
@@ -41,7 +43,9 @@ After the installation process, You will need to log on to the Pi via SSH to enc
 
 Congratulations, you are now running a SolarCoin full node!
 
-## Using your wallet
+<hr>
+
+#### Using your wallet
 
 This section is still under construction. Stay tuned for future updates!
 
@@ -59,11 +63,11 @@ After the installation, your Pi will synchronize with the blockchain. This will 
 You can start using your wallet once your Pi is in sync with the blockchain. For more information on how to use your wallet please refer to this guide:
 * https://github.com/Scalextrix/SolarCoin-Raspberry-Pi-Node/blob/master/Useful-SolarCoin-Daemon-Commands.md
 
-## !!! ENCRYPT YOUR WALLET BEFORE YOU DEPOSIT SLR ON IT !!!
+#### !!! MAKE SURE TO ENCRYPT YOUR WALLET BEFORE YOU DEPOSIT SLR ON IT !!!
 
 <hr>
 
-## Credits
+#### Credits
 
 SolarPi Copyright (C) 2017 Dominik Schäfer
 * domme@solarcoin.mehrunfug.org
