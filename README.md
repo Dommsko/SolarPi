@@ -36,7 +36,7 @@ After the installation process, You will need to log on to the Pi via SSH to enc
 - If you want your Pi to use WiFi, open dietpi.txt and enable Wifi by setting Wifi_Enabled to 1 and edit the lines Wifi_SSID and Wifi_KEY according to your local network.
 - If you don't know how to figure out your Pi's IP address afterwards you should set a static IP address.
 - Flash the downloaded DietPi .img-file onto your microSD card. This will create two partitions on the card called "boot" and "rootfs". It will take a few minutes depending on your SD card speed.
-- Mount/open the microSD card's "boot" partition and copy the files "Automation_Custom_Script.sh" and "dietpi.txt" into the main folder.
+- Mount/open the microSD card's "boot" partition and copy the files "Automation_Custom_Script.sh" and "dietpi.txt" into the main folder (overwrite the standard dietpi.txt).
 - Unmount/safely remove your microSD card.
 - Insert the microSD card into your Pi and plug it in.
 - The installation process starts. It will take approximately one hour.
