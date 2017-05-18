@@ -3,7 +3,7 @@
 #------------------------------------------------------------------------------------------------------
 # SolarPi - Installation script
 #------------------------------------------------------------------------------------------------------
-# by Domme
+# (C) 2017 Dominik Schäfer - domme@solarcoin.mehrunfug.org
 
 # This file is executed after the successful installation of DietPi OS.
 # Solarcoind is downloaded, compiled and configured as a service.
