@@ -54,6 +54,7 @@ After the installation, your Pi will synchronize with the blockchain. This will 
 > solarcoind encryptwallet **enter your secure passphrase here**
 - Backup your wallet with:
 > solarcoind backupwallet /destination/directory/of/your/choice/wallet.dat
+- Remember that if you lose your wallet or passphrase all of your SLR are lost forever.
 
 You can start using your wallet once your Pi is in sync with the blockchain. For more information on how to use your wallet please refer to this guide:
 * https://github.com/Scalextrix/SolarCoin-Raspberry-Pi-Node/blob/master/Useful-SolarCoin-Daemon-Commands.md
