@@ -1,5 +1,5 @@
 # SolarPi
-![SolarCoin](https://solarcoin.org/sites/default/files/slr-logo.png)
+![SolarCoin Logo](https://solarcoin.org/sites/default/files/slr-logo.png)
 
 #### Use your Raspberry Pi 3B as a SolarCoin full node
 - Unattended installation process
